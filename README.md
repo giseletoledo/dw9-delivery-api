@@ -3,5 +3,29 @@
 App desenvolvida durante a Dart Week, evento em que é desenvolvido um projeto em uma semana utilizando Flutter.
 Nessa edição é desenvolvido um app chamado vaquinha burguer de delivery.
 
-[Detalhes sobre as aulas.](https://github.com/giseletoledo/dw9_delivery_api)
+## Aula 1
+- Organização do código e separação depastas
+- Utilização de classes com padrão Singleton
+- Customização de widget - botões
+- Criação da tela - SplashScreen
+- Configuração do backend com json_rest_server
+- Packages - Dio e flutter_dotenv
 
+
+<p><img width="80%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/postman_produtos.png"/></p>
+<p><img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshot_1675303556.png"/></p>
+Detalhes sobre as aulas.
+
+
+
+## Aula 2
+- Criação do Model - produtos
+- Utilização de SOLID na criação de interfaces
+- Serialização de JSON
+- Criação do Repository - produtos (endpoint)
+- Gerenciamento de estados com Provider
+- Separando Multiprovider do main.dart
+- Package intl para formatação de valor monetário
+- App customizada
+- Tela de lista de produtos
+- Utilizando Bloc
