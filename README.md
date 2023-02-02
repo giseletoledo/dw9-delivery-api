@@ -8,8 +8,9 @@
 - Configuração do backend com json_rest_server
 - Packages - Dio e flutter_dotenv
 
-<p><img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshot_1675303556.png"/>
-<img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/postman_produtos.png"/></p>
+<p><img width="80%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/postman_produtos.png"/></p>
+<p><img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshot_1675303556.png"/></p>
+
 
 
 ## Aula 2
