@@ -8,6 +8,9 @@
 - Configuração do backend com json_rest_server
 - Packages - Dio e flutter_dotenv
 
+<p><img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshot_1675303556.png"/></p>
+
+
 ## Aula 2
 - Criação do Model - produtos
 - Utilização de SOLID na criação de interfaces
