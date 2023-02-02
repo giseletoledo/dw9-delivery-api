@@ -17,3 +17,4 @@
 - Criação do Model - produtos
 - Utilização de SOLID na criação de interfaces
 - Criação do Repository - produtos (endpoint)
+- Gerenciamento de estados com provider
