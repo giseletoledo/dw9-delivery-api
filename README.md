@@ -31,6 +31,8 @@ Detalhes sobre as aulas.
 - Estruturando com Bloc - packages bloc flutter_bloc e equatable
 - Loader customizado com o package loader animation widget e snackbar
 
-<p><img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshot_1675437441.png"/></p>
+<p><img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshot_1675437441.png"/>
+<img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/vakinha_burguer.gif"/>
+</p>
 
 
