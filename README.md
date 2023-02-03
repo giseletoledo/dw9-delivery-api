@@ -27,6 +27,6 @@ Detalhes sobre as aulas.
 - Separando Multiprovider do main.dart
 - App customizada
 - Tela de lista de produtos
-- Packages - intl para formatação de valor monetário e bloc
-- Estruturando com Bloc
-- Loader customizado com o package loader animation widget
+- Formatação de valor monetário - packages intl 
+- Estruturando com Bloc - packages bloc flutter_bloc e equatable
+- Loader customizado com o package loader animation widget e snackbar
