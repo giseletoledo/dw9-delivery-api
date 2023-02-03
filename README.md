@@ -25,7 +25,7 @@ Detalhes sobre as aulas.
 - Criação do Repository - produtos (endpoint)
 - Gerenciamento de estados com Provider
 - Separando Multiprovider do main.dart
-- App customizada
+- AppBar customizada
 - Tela de lista de produtos
 - Formatação de valor monetário - packages intl 
 - Estruturando com Bloc - packages bloc flutter_bloc e equatable
