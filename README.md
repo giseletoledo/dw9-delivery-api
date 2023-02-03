@@ -25,7 +25,8 @@ Detalhes sobre as aulas.
 - Criação do Repository - produtos (endpoint)
 - Gerenciamento de estados com Provider
 - Separando Multiprovider do main.dart
-- Package intl para formatação de valor monetário
 - App customizada
 - Tela de lista de produtos
-- Utilizando Bloc
+- Packages - intl para formatação de valor monetário e bloc
+- Estruturando com Bloc
+- Loader customizado com o package loader animation widget
