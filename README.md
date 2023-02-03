@@ -19,18 +19,16 @@ Detalhes sobre as aulas.
 
 
 ## Aula 2
-- Criação do Model - produtos
+- Criação do Model e repository - produtos (endpoint)
 - Utilização de SOLID na criação de interfaces
 - Serialização de JSON
-- Criação do Repository - produtos (endpoint)
-- Gerenciamento de estados com Provider
-- Separando Multiprovider do main.dart
+- Gerenciamento de estados com Provider e Multiprovider em arqquivo separado
 - AppBar customizada
-- Tela de lista de produtos
-- Formatação de valor monetário - packages intl 
+- Formatação de valor monetário - package intl 
 - Estruturando com Bloc - packages bloc flutter_bloc e equatable
 - Loader customizado com o package loader animation widget e snackbar
 - Adiciona dev dependencies - build_runner e match_generator para controlar o carregamento do loader
+- Uso de herança e mixin com a classe BaseState
 
 <p><img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshot_1675437441.png"/>
 <img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/vakinha_burguer.gif"/>
