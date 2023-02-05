@@ -35,4 +35,10 @@ Detalhes sobre as aulas.
 <img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/erro_snackbar.gif"/>
 </p>
 
+## Aula 2
+
+- Tela de detalhes do produto
+- Package auto_size_text
+- Widget botão de adicionar e remover produtos
+
 
