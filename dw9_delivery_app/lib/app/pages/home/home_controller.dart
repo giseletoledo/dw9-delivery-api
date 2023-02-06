@@ -1,4 +1,5 @@
 import 'dart:developer';
+import 'package:dw9_delivery_app/app/dto/order_product_dto.dart';
 import 'package:dw9_delivery_app/app/pages/home/home_state.dart';
 import 'package:dw9_delivery_app/app/repositories/products/products_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -23,5 +24,15 @@ class HomeController extends Cubit<HomeState> {
             errorMessage: 'Erro ao buscar produtos'),
       );
     }
+  }
+
+  void addOrUpdateCart(OrderProductDto orderProduct) {
+    final shoppingCart = [
+      ...state.shoppingCart
+    ]; //faz uma cópia do array antigo
+    shoppingCart.add(orderProduct);
+    emit(
+      state.copyWith(shoppingCart: shoppingCart),
+    );
   }
 }

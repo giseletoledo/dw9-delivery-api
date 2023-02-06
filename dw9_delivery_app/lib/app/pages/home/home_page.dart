@@ -42,13 +42,19 @@ class _HomePageState extends BaseState<HomePage, HomeController> {
         builder: (context, state) {
           return Column(
             children: [
+              //Text(state.shoppingCart.length.toString()), verificando state da função addOrupdateCart
               Expanded(
                 flex: 1,
                 child: ListView.builder(
                   itemCount: state.products.length,
                   itemBuilder: (context, index) {
                     final product = state.products[index];
-                    return DeliveryProductTile(product: product);
+                    final orders = state.shoppingCart
+                        .where((order) => order.product == product);
+                    return DeliveryProductTile(
+                      product: product,
+                      orderProduct: orders.isEmpty ? orders.first : null,
+                    );
                   },
                 ),
               ),

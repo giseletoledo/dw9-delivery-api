@@ -4,6 +4,7 @@ import 'package:dw9_delivery_app/app/core/ui/helpers/size_extensions.dart';
 import 'package:dw9_delivery_app/app/core/ui/styles/text_styles.dart';
 import 'package:dw9_delivery_app/app/core/ui/widgets/delivery_appbar.dart';
 import 'package:dw9_delivery_app/app/core/ui/widgets/delivery_increment_decrement_button.dart';
+import 'package:dw9_delivery_app/app/dto/order_product_dto.dart';
 import 'package:dw9_delivery_app/app/models/product_model.dart';
 import 'package:dw9_delivery_app/app/pages/produc_detail/product_detail_controller.dart';
 import 'package:flutter/material.dart';
@@ -13,8 +14,9 @@ import '../../core/ui/base_state/base_state.dart';
 
 class ProductDetailPage extends StatefulWidget {
   final ProductModel product;
+  final OrderProductDto? order;
 
-  const ProductDetailPage({super.key, required this.product});
+  const ProductDetailPage({super.key, required this.product, this.order});
 
   @override
   State<ProductDetailPage> createState() => _ProductDetailPageState();
@@ -86,7 +88,14 @@ class _ProductDetailPageState
                   child: BlocBuilder<ProductDetailController, int>(
                     builder: (context, amount) {
                       return ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pop(
+                            OrderProductDto(
+                              product: widget.product,
+                              amount: amount,
+                            ),
+                          );
+                        },
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
