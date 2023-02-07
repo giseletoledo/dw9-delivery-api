@@ -40,7 +40,9 @@ class _ProductDetailPageState
             title: const Text('Deseja excluir o produto?'),
             actions: [
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
                 child: Text(
                   'Cancelar',
                   style:
@@ -48,7 +50,15 @@ class _ProductDetailPageState
                 ),
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pop(context);
+                  Navigator.of(context).pop(
+                    OrderProductDto(
+                      product: widget.product,
+                      amount: amount,
+                    ),
+                  );
+                },
                 child: Text(
                   'Confirmar',
                   style: context.textStyles.textBold,

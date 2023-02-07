@@ -13,35 +13,35 @@ class HomeState extends Equatable {
   final HomeStateStatus status;
   final List<ProductModel> products;
   final String? errorMessage;
-  final List<OrderProductDto> shoppingCart;
+  final List<OrderProductDto> shoppingBag;
 
   const HomeState({
     required this.status,
     required this.products,
-    required this.shoppingCart,
+    required this.shoppingBag,
     this.errorMessage,
   });
 
   const HomeState.initial()
       : status = HomeStateStatus.initial,
         products = const [],
-        shoppingCart = const [],
+        shoppingBag = const [],
         errorMessage = null;
 
   @override
-  List<Object?> get props => [status, products, errorMessage, shoppingCart];
+  List<Object?> get props => [status, products, errorMessage, shoppingBag];
 
   HomeState copyWith({
     HomeStateStatus? status,
     List<ProductModel>? products,
     String? errorMessage,
-    List<OrderProductDto>? shoppingCart,
+    List<OrderProductDto>? shoppingBag,
   }) {
     return HomeState(
       status: status ?? this.status,
       products: products ?? this.products,
       errorMessage: errorMessage ?? this.errorMessage,
-      shoppingCart: shoppingCart ?? this.shoppingCart,
+      shoppingBag: shoppingBag ?? this.shoppingBag,
     );
   }
 }
