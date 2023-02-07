@@ -40,7 +40,9 @@ Nessa edição é desenvolvido um app chamado vaquinha burguer de delivery.
 
 <p>
 <img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/erro_snackbar.gif"/>
-<img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/tela_detalhe.gif"/></p>
+<img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/tela_detalhe.gif"/>
+<img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/add_remove_product.gif"/>
+</p>
 
 
 
