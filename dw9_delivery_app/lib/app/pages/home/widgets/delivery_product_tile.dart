@@ -23,7 +23,7 @@ class DeliveryProductTile extends StatelessWidget {
         final orderProductResult = await Navigator.of(context).pushNamed(
             '/productDetail',
             arguments: {'product': product, 'order': orderProduct});
-        if (orderProduct != null) {
+        if (orderProductResult != null) {
           controller.addOrUpdateCart(orderProductResult as OrderProductDto);
         }
       },

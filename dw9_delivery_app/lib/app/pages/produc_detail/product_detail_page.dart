@@ -25,6 +25,13 @@ class ProductDetailPage extends StatefulWidget {
 class _ProductDetailPageState
     extends BaseState<ProductDetailPage, ProductDetailController> {
   @override
+  void initState() {
+    super.initState();
+    final amount = widget.order?.amount ?? 1;
+    controller.initial(amount, widget.order != null);
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: DeliveryAppbar(),
@@ -88,6 +95,10 @@ class _ProductDetailPageState
                   child: BlocBuilder<ProductDetailController, int>(
                     builder: (context, amount) {
                       return ElevatedButton(
+                        style: amount == 0
+                            ? ElevatedButton.styleFrom(
+                                backgroundColor: Colors.red)
+                            : null,
                         onPressed: () {
                           Navigator.of(context).pop(
                             OrderProductDto(
@@ -96,23 +107,28 @@ class _ProductDetailPageState
                             ),
                           );
                         },
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            Text(
-                              'Adicionar',
-                              style: context.textStyles.textExtraBold
-                                  .copyWith(fontSize: 13),
-                            ),
-                            AutoSizeText(
-                              (widget.product.price * amount).currencyPTBR,
-                              maxFontSize: 13,
-                              minFontSize: 5,
-                              maxLines: 1,
-                              textAlign: TextAlign.center,
-                              style: context.textStyles.textExtraBold,
-                            ),
-                          ],
+                        child: Visibility(
+                          visible: amount > 0,
+                          replacement: Text('Excluir Produto',
+                              style: context.textStyles.textExtraBold),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Text(
+                                'Adicionar',
+                                style: context.textStyles.textExtraBold
+                                    .copyWith(fontSize: 13),
+                              ),
+                              AutoSizeText(
+                                (widget.product.price * amount).currencyPTBR,
+                                maxFontSize: 13,
+                                minFontSize: 5,
+                                maxLines: 1,
+                                textAlign: TextAlign.center,
+                                style: context.textStyles.textExtraBold,
+                              ),
+                            ],
+                          ),
                         ),
                       );
                     },

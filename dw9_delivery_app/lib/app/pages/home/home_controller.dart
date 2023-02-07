@@ -30,7 +30,13 @@ class HomeController extends Cubit<HomeState> {
     final shoppingCart = [
       ...state.shoppingCart
     ]; //faz uma cópia do array antigo
-    shoppingCart.add(orderProduct);
+    final orderIndex = shoppingCart
+        .indexWhere((element) => element.product == orderProduct.product);
+    if (orderIndex > -1) {
+      shoppingCart[orderIndex] = orderProduct;
+    } else {
+      shoppingCart.add(orderProduct);
+    }
     emit(
       state.copyWith(shoppingCart: shoppingCart),
     );
