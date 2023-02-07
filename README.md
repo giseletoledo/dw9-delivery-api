@@ -22,23 +22,26 @@ Detalhes sobre as aulas.
 - Criação do Model e repository - produtos (endpoint)
 - Utilização de SOLID na criação de interfaces
 - Serialização de JSON
-- Gerenciamento de estados com Provider e Multiprovider em arqquivo separado
+- Uso de Provider e Multiprovider em arquivo separado da main.dart
 - AppBar customizada
 - Formatação de valor monetário - package intl 
-- Estruturando com Bloc - packages bloc flutter_bloc e equatable
+- Gerenciamento de estado com Bloc e cubit - packages bloc flutter_bloc e equatable
 - Loader customizado com o package loader animation widget e snackbar
 - Adiciona dev dependencies - build_runner e match_generator para controlar o carregamento do loader
 - Uso de herança e mixin com a classe BaseState
 
-<p><img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshot_1675437441.png"/>
-<img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/vakinha_burguer.gif"/>
-<img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/erro_snackbar.gif"/>
+<p><img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/Screenshot_1675437441.png"/>
+<img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/vakinha_burguer.gif"/>
+<img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/erro_snackbar.gif"/>
 </p>
 
-## Aula 2
+## Aula 3
 
 - Tela de detalhes do produto
 - Package auto_size_text
 - Widget botão de adicionar e remover produtos
+
+<p><img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/tela_detalhe.gif"/></p>
+
 
 
