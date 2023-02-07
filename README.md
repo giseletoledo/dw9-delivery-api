@@ -34,14 +34,16 @@ Nessa edição é desenvolvido um app chamado vaquinha burguer de delivery.
 - Widget botão de adicionar e remover produtos
 
 <p><img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/Screenshot_1675303556.png"/>
-<img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/Screenshot_1675437441.png"/>
-<img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/vakinha_burguer.gif"/></p>
+<img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/vakinha_burguer.gif"/>
+<img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/erro_snackbar.gif"/>
+</p>
 
 
 <p>
-<img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/erro_snackbar.gif"/>
 <img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/tela_detalhe.gif"/>
 <img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/add_remove_product.gif"/>
+<img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/sacola_button.gif"/>
+
 </p>
 
 
