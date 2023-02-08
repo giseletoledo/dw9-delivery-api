@@ -24,7 +24,7 @@ class _HomePageState extends BaseState<HomePage, HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: DeliveryAppbar(),
-      body: BlocConsumer<HomeController, HomeState>(
+      body: BlocConsumer<HomeController, RegisterState>(
         listener: (context, state) {
           state.status.matchAny(
             any: () => hideLoader(),

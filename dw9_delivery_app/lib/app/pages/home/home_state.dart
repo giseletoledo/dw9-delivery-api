@@ -9,20 +9,20 @@ part 'home_state.g.dart';
 @match
 enum HomeStateStatus { initial, loading, loaded, error }
 
-class HomeState extends Equatable {
+class RegisterState extends Equatable {
   final HomeStateStatus status;
   final List<ProductModel> products;
   final String? errorMessage;
   final List<OrderProductDto> shoppingBag;
 
-  const HomeState({
+  const RegisterState({
     required this.status,
     required this.products,
     required this.shoppingBag,
     this.errorMessage,
   });
 
-  const HomeState.initial()
+  const RegisterState.initial()
       : status = HomeStateStatus.initial,
         products = const [],
         shoppingBag = const [],
@@ -31,13 +31,13 @@ class HomeState extends Equatable {
   @override
   List<Object?> get props => [status, products, errorMessage, shoppingBag];
 
-  HomeState copyWith({
+  RegisterState copyWith({
     HomeStateStatus? status,
     List<ProductModel>? products,
     String? errorMessage,
     List<OrderProductDto>? shoppingBag,
   }) {
-    return HomeState(
+    return RegisterState(
       status: status ?? this.status,
       products: products ?? this.products,
       errorMessage: errorMessage ?? this.errorMessage,
