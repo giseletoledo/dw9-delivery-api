@@ -25,13 +25,16 @@ Nessa edição é desenvolvido um app chamado vaquinha burguer de delivery.
 - Adiciona dev dependencies - build_runner e match_generator para controlar o carregamento do loader
 - Uso de herança e mixin com a classe BaseState
 
-
-
 ## Aula 3
 
 - Tela de detalhes do produto
-- Package auto_size_text
+- Packages - auto_size_text, shared_preferences
 - Widget botão de adicionar e remover produtos
+- Botão (sacola) que armazena o valor dos produtos comprados
+- Tela de login
+- Tela de cadastro de usuário
+
+## Aula 4
 
 <p><img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/Screenshot_1675303556.png"/>
 <img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/vakinha_burguer.gif"/>
@@ -43,8 +46,9 @@ Nessa edição é desenvolvido um app chamado vaquinha burguer de delivery.
 <img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/tela_detalhe.gif"/>
 <img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/add_remove_product.gif"/>
 <img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/sacola_button.gif"/>
-
 </p>
+
+
 
 
 
