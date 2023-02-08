@@ -36,6 +36,9 @@ Nessa edição é desenvolvido um app chamado vaquinha burguer de delivery.
 
 ## Aula 4
 
+- Autenticação
+- Tela de pedidos
+
 <p><img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/Screenshot_1675303556.png"/>
 <img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/vakinha_burguer.gif"/>
 <img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/erro_snackbar.gif"/>
