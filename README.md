@@ -42,7 +42,7 @@ Nessa edição é desenvolvido um app chamado vaquinha burguer de delivery.
 - Validação de formulário com Validatorless (package)
 - Cria endpoint /users no Postman para testar cadastro de usuários
 
-<p><img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/postman_auth1.png"/><img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/postman_auth2.png"/></p>
+<p><img width="50%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/postman_auth1.png"/><img width="50%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/postman_auth2.png"/></p>
 
 <p><img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/Screenshot_1675303556.png"/>
 <img width="30%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/vakinha_burguer.gif"/>
