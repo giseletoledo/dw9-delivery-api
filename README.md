@@ -45,6 +45,7 @@ Nessa edição é desenvolvido um app chamado vaquinha burguer de delivery.
 - Implementação do login
 - implementação do cadastro
 - Uilizando widget Sliver
+- Formulário customizado com package - flutter_awesome_select
 
 <p><img width="45%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/postman_auth1.png"/><img width="55%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/postman_auth2.png"/></p>
 
