@@ -6,7 +6,7 @@ import 'package:dw9_delivery_app/app/core/ui/widgets/delivery_appbar.dart';
 import 'package:dw9_delivery_app/app/core/ui/widgets/delivery_increment_decrement_button.dart';
 import 'package:dw9_delivery_app/app/dto/order_product_dto.dart';
 import 'package:dw9_delivery_app/app/models/product_model.dart';
-import 'package:dw9_delivery_app/app/pages/produc_detail/product_detail_controller.dart';
+import 'package:dw9_delivery_app/app/pages/product_detail/product_detail_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

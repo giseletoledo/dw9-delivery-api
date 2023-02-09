@@ -1,5 +1,5 @@
-import 'package:dw9_delivery_app/app/pages/produc_detail/product_detail_controller.dart';
-import 'package:dw9_delivery_app/app/pages/produc_detail/product_detail_page.dart';
+import 'package:dw9_delivery_app/app/pages/product_detail/product_detail_controller.dart';
+import 'package:dw9_delivery_app/app/pages/product_detail/product_detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

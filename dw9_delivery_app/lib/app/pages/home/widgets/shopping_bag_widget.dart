@@ -2,6 +2,7 @@ import 'package:dw9_delivery_app/app/core/extensions/formatter_extension.dart';
 import 'package:dw9_delivery_app/app/core/ui/helpers/size_extensions.dart';
 import 'package:dw9_delivery_app/app/core/ui/styles/text_styles.dart';
 import 'package:dw9_delivery_app/app/dto/order_product_dto.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -13,13 +14,20 @@ class ShoppingBagWidget extends StatelessWidget {
   Future<void> _goOrder(BuildContext context) async {
     final navigator = Navigator.of(context);
     final sp = await SharedPreferences.getInstance();
+    //sp.clear(); //impede de ir para uma tela vazia porque limpa a memória
     //Verifica se já tem um accessToken
     if (!sp.containsKey('accessToken')) {
       //Envia para o login
       final loginResult = await navigator.pushNamed('/auth/login');
-      print(loginResult);
+      if (kDebugMode) {
+        print(loginResult);
+      }
+      if (loginResult == null || loginResult == false) {
+        return;
+      }
     }
     //envia para o order
+    navigator.pushNamed('/order', arguments: bag);
   }
 
   @override

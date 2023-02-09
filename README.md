@@ -44,6 +44,7 @@ Nessa edição é desenvolvido um app chamado vaquinha burguer de delivery.
 - Cria endpoint /users no Postman para testar cadastro de usuários
 - Implementação do login
 - implementação do cadastro
+- Uilizando widget Sliver
 
 <p><img width="45%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/postman_auth1.png"/><img width="55%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/postman_auth2.png"/></p>
 
