@@ -4,6 +4,9 @@ import 'package:dw9_delivery_app/app/core/ui/styles/text_styles.dart';
 import 'package:dw9_delivery_app/app/core/ui/widgets/delivery_increment_decrement_button.dart';
 import 'package:dw9_delivery_app/app/dto/order_product_dto.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import 'order_controller.dart';
 
 class OrderProductTile extends StatelessWidget {
   final int index;
@@ -49,9 +52,18 @@ class OrderProductTile extends StatelessWidget {
                             fontSize: 14, color: context.colors.secondary),
                       ),
                       DeliveryIncrementDecrementButton.compact(
-                          amount: 1,
-                          incrementOnTap: () {},
-                          decrementOnTap: () {})
+                          amount: orderProduct
+                              .amount, //valor atualizado do orderProducts
+                          incrementOnTap: () {
+                            context
+                                .read<OrderController>()
+                                .incrementProduct(index);
+                          },
+                          decrementOnTap: () {
+                            context
+                                .read<OrderController>()
+                                .decrementProduct(index);
+                          })
                     ],
                   )
                 ],

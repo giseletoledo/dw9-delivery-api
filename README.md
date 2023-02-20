@@ -47,6 +47,19 @@ Nessa edição é desenvolvido um app chamado vaquinha burguer de delivery.
 - Uilizando widget Sliver
 - Formulário customizado com package - flutter_awesome_select
 
+## Aula 5
+
+- Carregando os produtos na sacola e atualizando ao voltar para o menu
+- Implementando authinterceptor para adicionar token na requisição
+- Listas formas de pagamento no RadioButton
+- Validação de formulário
+- Função de adicionar e remover produtos na tela da sacola
+- Excluir produto
+- Limpar a sacola
+- Salvar pedido
+- Tratar login expirado
+
+
 <p><img width="45%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/postman_auth1.png"/><img width="55%" src="https://github.com/giseletoledo/dw9_delivery_api/blob/master/Screenshots/postman_auth2.png"/></p>
 
 <p>
