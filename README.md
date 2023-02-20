@@ -54,6 +54,8 @@ Nessa edição é desenvolvido um app chamado vaquinha burguer de delivery.
 - Listas formas de pagamento no RadioButton
 - Validação de formulário
 - Função de adicionar e remover produtos na tela da sacola
+- Calculo do total dos pedidos
+- Capturar o evento de sair da tela com WillPopScope
 - Excluir produto
 - Limpar a sacola
 - Salvar pedido
