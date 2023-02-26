@@ -120,7 +120,7 @@ class _OrderPageState extends BaseState<OrderPage, OrderController> {
                           style: context.textStyles.textTitle,
                         ),
                         IconButton(
-                          onPressed: () {},
+                          onPressed: () => controller.emptyBag(),
                           icon: Image.asset('assets/images/trashRegular.png'),
                         ),
                       ],
