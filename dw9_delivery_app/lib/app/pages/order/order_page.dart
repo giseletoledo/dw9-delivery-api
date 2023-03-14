@@ -24,7 +24,7 @@ class OrderPage extends StatefulWidget {
 
 class _OrderPageState extends BaseState<OrderPage, OrderController> {
   final _formKey = GlobalKey<FormState>();
-  final _adressEC = TextEditingController();
+  final _addressEC = TextEditingController();
   final _documentEC = TextEditingController();
   int? paymentTypeId;
   final paymentTypeValid = ValueNotifier<bool>(true);
@@ -92,6 +92,13 @@ class _OrderPageState extends BaseState<OrderPage, OrderController> {
             showInfo(
                 'Sua sacola está vazia, por favor selecione um produto para realizar seu pedido');
             Navigator.pop(context, <OrderProductDto>[]);
+          },
+          success: () {
+            hideLoader();
+            Navigator.of(context).popAndPushNamed(
+              '/order/completed',
+              result: <OrderProductDto>[],
+            );
           },
         );
       },
@@ -185,7 +192,7 @@ class _OrderPageState extends BaseState<OrderPage, OrderController> {
                       ),
                       OrderField(
                         title: 'Endereço de entrega',
-                        controller: _adressEC,
+                        controller: _addressEC,
                         validator:
                             Validatorless.required('Endereço obrigatório'),
                         hintText: 'Digite um endereço',
@@ -242,7 +249,12 @@ class _OrderPageState extends BaseState<OrderPage, OrderController> {
                                   _formKey.currentState?.validate() ?? false;
                               final paymentTypeSelected = paymentTypeId != null;
                               paymentTypeValid.value = paymentTypeSelected;
-                              if (valid) {}
+                              if (valid && paymentTypeSelected) {
+                                controller.saveOrder(
+                                    address: _addressEC.text,
+                                    document: _documentEC.text,
+                                    paymentMethodId: paymentTypeId!);
+                              }
                             }),
                       )
                     ],
