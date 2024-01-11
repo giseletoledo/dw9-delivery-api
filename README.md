@@ -4,7 +4,7 @@ App desenvolvida durante a Dart Week, evento em que é desenvolvido um projeto e
 Nessa edição é desenvolvido um app chamado vaquinha burguer de delivery.
 
 ## Aula 1
-- Organização do código e separação depastas
+- Organização do código e separação de pastas
 - Utilização de classes com padrão Singleton
 - Customização de widget - botões
 - Criação da tela - SplashScreen
